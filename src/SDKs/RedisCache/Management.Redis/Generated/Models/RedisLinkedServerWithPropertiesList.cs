@@ -17,27 +17,28 @@ namespace Microsoft.Azure.Management.Redis.Models
     using System.Linq;
 
     /// <summary>
-    /// Parameters for Redis import operation.
+    /// List of linked servers (with properites) of a Redis cache.
     /// </summary>
-    public partial class ImportRDBParameters
+    public partial class RedisLinkedServerWithPropertiesList
     {
         /// <summary>
-        /// Initializes a new instance of the ImportRDBParameters class.
+        /// Initializes a new instance of the
+        /// RedisLinkedServerWithPropertiesList class.
         /// </summary>
-        public ImportRDBParameters()
+        public RedisLinkedServerWithPropertiesList()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the ImportRDBParameters class.
+        /// Initializes a new instance of the
+        /// RedisLinkedServerWithPropertiesList class.
         /// </summary>
-        /// <param name="files">files to import.</param>
-        /// <param name="format">File format.</param>
-        public ImportRDBParameters(IList<string> files, string format = default(string))
+        /// <param name="value">List of linked servers (with properites) of a
+        /// Redis cache.</param>
+        public RedisLinkedServerWithPropertiesList(IList<RedisLinkedServerWithProperties> value)
         {
-            Format = format;
-            Files = files;
+            Value = value;
             CustomInit();
         }
 
@@ -47,16 +48,11 @@ namespace Microsoft.Azure.Management.Redis.Models
         partial void CustomInit();
 
         /// <summary>
-        /// Gets or sets file format.
+        /// Gets or sets list of linked servers (with properites) of a Redis
+        /// cache.
         /// </summary>
-        [JsonProperty(PropertyName = "format")]
-        public string Format { get; set; }
-
-        /// <summary>
-        /// Gets or sets files to import.
-        /// </summary>
-        [JsonProperty(PropertyName = "files")]
-        public IList<string> Files { get; set; }
+        [JsonProperty(PropertyName = "value")]
+        public IList<RedisLinkedServerWithProperties> Value { get; set; }
 
         /// <summary>
         /// Validate the object.
@@ -66,9 +62,19 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </exception>
         public virtual void Validate()
         {
-            if (Files == null)
+            if (Value == null)
             {
-                throw new ValidationException(ValidationRules.CannotBeNull, "Files");
+                throw new ValidationException(ValidationRules.CannotBeNull, "Value");
+            }
+            if (Value != null)
+            {
+                foreach (var element in Value)
+                {
+                    if (element != null)
+                    {
+                        element.Validate();
+                    }
+                }
             }
         }
     }

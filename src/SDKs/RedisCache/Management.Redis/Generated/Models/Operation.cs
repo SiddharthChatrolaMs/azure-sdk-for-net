@@ -10,35 +10,33 @@
 
 namespace Microsoft.Azure.Management.Redis.Models
 {
-    using Microsoft.Rest;
-    using Microsoft.Rest.Azure;
     using Newtonsoft.Json;
     using System.Linq;
 
     /// <summary>
-    /// The Resource definition.
+    /// REST API operation
     /// </summary>
-    public partial class Resource : IResource
+    public partial class Operation
     {
         /// <summary>
-        /// Initializes a new instance of the Resource class.
+        /// Initializes a new instance of the Operation class.
         /// </summary>
-        public Resource()
+        public Operation()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the Resource class.
+        /// Initializes a new instance of the Operation class.
         /// </summary>
-        /// <param name="id">Resource ID.</param>
-        /// <param name="name">Resource name.</param>
-        /// <param name="type">Resource type.</param>
-        public Resource(string id = default(string), string name = default(string), string type = default(string))
+        /// <param name="name">Operation name:
+        /// {provider}/{resource}/{operation}</param>
+        /// <param name="display">The object that describes the
+        /// operation.</param>
+        public Operation(string name = default(string), OperationDisplay display = default(OperationDisplay))
         {
-            Id = id;
             Name = name;
-            Type = type;
+            Display = display;
             CustomInit();
         }
 
@@ -48,22 +46,16 @@ namespace Microsoft.Azure.Management.Redis.Models
         partial void CustomInit();
 
         /// <summary>
-        /// Gets resource ID.
-        /// </summary>
-        [JsonProperty(PropertyName = "id")]
-        public string Id { get; private set; }
-
-        /// <summary>
-        /// Gets resource name.
+        /// Gets or sets operation name: {provider}/{resource}/{operation}
         /// </summary>
         [JsonProperty(PropertyName = "name")]
-        public string Name { get; private set; }
+        public string Name { get; set; }
 
         /// <summary>
-        /// Gets resource type.
+        /// Gets or sets the object that describes the operation.
         /// </summary>
-        [JsonProperty(PropertyName = "type")]
-        public string Type { get; private set; }
+        [JsonProperty(PropertyName = "display")]
+        public OperationDisplay Display { get; set; }
 
     }
 }

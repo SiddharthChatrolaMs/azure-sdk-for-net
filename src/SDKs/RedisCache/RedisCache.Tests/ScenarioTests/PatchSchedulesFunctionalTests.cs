@@ -75,8 +75,9 @@ namespace AzureRedisCache.Tests
                     redisCacheName);
 
                 _client.PatchSchedules.Delete(resourceGroupName, redisCacheName);
-                var schedules = _client.PatchSchedules.Get(resourceGroupName, redisCacheName);
-                Assert.Null(schedules);
+
+                var ex = Assert.Throws<CloudException>(() => _client.PatchSchedules.Get(resourceGroupName, redisCacheName));
+                Assert.Contains("There are no patch schedules found for redis cache", ex.Message);
             }
         }
 

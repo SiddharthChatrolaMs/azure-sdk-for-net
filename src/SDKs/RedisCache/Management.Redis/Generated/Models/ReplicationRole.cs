@@ -16,43 +16,43 @@ namespace Microsoft.Azure.Management.Redis.Models
     using System.Runtime.Serialization;
 
     /// <summary>
-    /// Defines values for RedisKeyType.
+    /// Defines values for ReplicationRole.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum RedisKeyType
+    public enum ReplicationRole
     {
         [EnumMember(Value = "Primary")]
         Primary,
         [EnumMember(Value = "Secondary")]
         Secondary
     }
-    internal static class RedisKeyTypeEnumExtension
+    internal static class ReplicationRoleEnumExtension
     {
-        internal static string ToSerializedValue(this RedisKeyType? value)
+        internal static string ToSerializedValue(this ReplicationRole? value)
         {
-            return value == null ? null : ((RedisKeyType)value).ToSerializedValue();
+            return value == null ? null : ((ReplicationRole)value).ToSerializedValue();
         }
 
-        internal static string ToSerializedValue(this RedisKeyType value)
+        internal static string ToSerializedValue(this ReplicationRole value)
         {
             switch( value )
             {
-                case RedisKeyType.Primary:
+                case ReplicationRole.Primary:
                     return "Primary";
-                case RedisKeyType.Secondary:
+                case ReplicationRole.Secondary:
                     return "Secondary";
             }
             return null;
         }
 
-        internal static RedisKeyType? ParseRedisKeyType(this string value)
+        internal static ReplicationRole? ParseReplicationRole(this string value)
         {
             switch( value )
             {
                 case "Primary":
-                    return RedisKeyType.Primary;
+                    return ReplicationRole.Primary;
                 case "Secondary":
-                    return RedisKeyType.Secondary;
+                    return ReplicationRole.Secondary;
             }
             return null;
         }
