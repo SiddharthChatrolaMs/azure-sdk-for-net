@@ -22,7 +22,7 @@ namespace AzureRedisCache.Tests
         public string RedisCacheName = "hydracache1";
         public string Location = "North Central US";
         private RedisCacheManagementHelper _redisCacheManagementHelper;
-        private MockContext _context;
+        private MockContext _context=null;
         
         public TestsFixtureWithCacheCreate()
         {
@@ -56,9 +56,16 @@ namespace AzureRedisCache.Tests
 
         private void Cleanup()
         {
-            HttpMockServer.RecordsDirectory = GetSessionsDirectoryPath();
-            HttpMockServer.Initialize(this.GetType().FullName, ".cleanup");
-            _context.Dispose();
+            if (HttpMockServer.Mode == HttpRecorderMode.Record)
+            {
+                HttpMockServer.RecordsDirectory = GetSessionsDirectoryPath();
+                HttpMockServer.Initialize(this.GetType().FullName, ".cleanup");
+            }
+            if (_context != null)
+            {
+                _context.Dispose();
+                _context = null;
+            }
         }
 
         private static string GetSessionsDirectoryPath()

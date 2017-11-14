@@ -21,7 +21,7 @@ namespace AzureRedisCache.Tests
 
         public string Location = "North Central US";
         private RedisCacheManagementHelper _redisCacheManagementHelper;
-        private MockContext _context;
+        private MockContext _context = null;
 
         public TestsFixture()
         {
@@ -55,8 +55,15 @@ namespace AzureRedisCache.Tests
 
         private void Cleanup()
         {
-            HttpMockServer.Initialize(this.GetType().FullName, ".cleanup");
-            _context.Dispose();
+            if (HttpMockServer.Mode == HttpRecorderMode.Record)
+            {
+                HttpMockServer.Initialize(this.GetType().FullName, ".cleanup");
+            }
+            if (_context != null)
+            {
+                _context.Dispose();
+                _context = null;
+            }
         }
     }
 }
