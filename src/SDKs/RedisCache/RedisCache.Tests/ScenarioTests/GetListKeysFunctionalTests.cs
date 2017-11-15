@@ -133,7 +133,6 @@ namespace AzureRedisCache.Tests
         [Fact]
         public void RegenerateKeyTest()
         {
-            HttpMockServer.RecordsDirectory = GetSessionsDirectoryPath();
             using (var context = MockContext.Start(this.GetType().FullName))
             {
                 var _client = RedisCacheManagementTestUtilities.GetRedisManagementClient(this, context);

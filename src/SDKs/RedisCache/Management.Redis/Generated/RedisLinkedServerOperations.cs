@@ -499,7 +499,7 @@ namespace Microsoft.Azure.Management.Redis
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<AzureOperationResponse<RedisLinkedServerWithPropertiesList>> ListWithHttpMessagesAsync(string resourceGroupName, string name, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<AzureOperationResponse<IList<RedisLinkedServerWithProperties>>> ListWithHttpMessagesAsync(string resourceGroupName, string name, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (resourceGroupName == null)
             {
@@ -633,7 +633,7 @@ namespace Microsoft.Azure.Management.Redis
                 throw ex;
             }
             // Create Result
-            var _result = new AzureOperationResponse<RedisLinkedServerWithPropertiesList>();
+            var _result = new AzureOperationResponse<IList<RedisLinkedServerWithProperties>>();
             _result.Request = _httpRequest;
             _result.Response = _httpResponse;
             if (_httpResponse.Headers.Contains("x-ms-request-id"))
@@ -646,7 +646,7 @@ namespace Microsoft.Azure.Management.Redis
                 _responseContent = await _httpResponse.Content.ReadAsStringAsync().ConfigureAwait(false);
                 try
                 {
-                    _result.Body = Rest.Serialization.SafeJsonConvert.DeserializeObject<RedisLinkedServerWithPropertiesList>(_responseContent, Client.DeserializationSettings);
+                    _result.Body = Rest.Serialization.SafeJsonConvert.DeserializeObject<IList<RedisLinkedServerWithProperties>>(_responseContent, Client.DeserializationSettings);
                 }
                 catch (JsonException ex)
                 {

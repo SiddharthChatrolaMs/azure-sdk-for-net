@@ -136,7 +136,7 @@ namespace Microsoft.Azure.Management.Redis
         /// <exception cref="Microsoft.Rest.ValidationException">
         /// Thrown when a required parameter is null
         /// </exception>
-        Task<AzureOperationResponse<RedisLinkedServerWithPropertiesList>> ListWithHttpMessagesAsync(string resourceGroupName, string name, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<AzureOperationResponse<IList<RedisLinkedServerWithProperties>>> ListWithHttpMessagesAsync(string resourceGroupName, string name, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Adds a linked server to the Redis cache (requires Premium SKU).
         /// </summary>

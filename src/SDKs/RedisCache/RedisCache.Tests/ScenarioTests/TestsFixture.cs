@@ -19,7 +19,6 @@ namespace AzureRedisCache.Tests
         public string ResourceGroupName { set; get; }
         public string RedisCacheName { set; get; }
 
-        public string Location = "North Central US";
         private RedisCacheManagementHelper _redisCacheManagementHelper;
         private MockContext _context = null;
 
@@ -32,9 +31,9 @@ namespace AzureRedisCache.Tests
                 _redisCacheManagementHelper = new RedisCacheManagementHelper(this, _context);
                 _redisCacheManagementHelper.TryRegisterSubscriptionForResource();
 
-                ResourceGroupName = TestUtilities.GenerateName("redisCacheRG");
-                RedisCacheName = TestUtilities.GenerateName("RCName");
-                _redisCacheManagementHelper.TryCreateResourceGroup(ResourceGroupName, Location);
+                ResourceGroupName = TestUtilities.GenerateName("RedisCreateUpdate");
+                RedisCacheName = TestUtilities.GenerateName("RedisCreateUpdate");
+                _redisCacheManagementHelper.TryCreateResourceGroup(ResourceGroupName, RedisCacheManagementHelper.Location);
             }
             catch (Exception)
             {

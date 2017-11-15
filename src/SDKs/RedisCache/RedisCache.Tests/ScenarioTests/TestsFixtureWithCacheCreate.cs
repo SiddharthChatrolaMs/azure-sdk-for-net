@@ -19,8 +19,8 @@ namespace AzureRedisCache.Tests
     public class TestsFixtureWithCacheCreate : TestBase, IDisposable
     {
         public string ResourceGroupName { set; get; }
-        public string RedisCacheName = "hydracache1";
-        public string Location = "North Central US";
+        public string RedisCacheName { set; get; }
+        
         private RedisCacheManagementHelper _redisCacheManagementHelper;
         private MockContext _context=null;
         
@@ -34,9 +34,11 @@ namespace AzureRedisCache.Tests
                 _redisCacheManagementHelper = new RedisCacheManagementHelper(this, _context);
                 _redisCacheManagementHelper.TryRegisterSubscriptionForResource();
 
-                ResourceGroupName = TestUtilities.GenerateName("hydra1");
-                _redisCacheManagementHelper.TryCreateResourceGroup(ResourceGroupName, Location);
-                _redisCacheManagementHelper.TryCreatingCache(ResourceGroupName, RedisCacheName, Location);
+                ResourceGroupName = TestUtilities.GenerateName("RedisGetList");
+                RedisCacheName = TestUtilities.GenerateName("RedisGetList");
+
+                _redisCacheManagementHelper.TryCreateResourceGroup(ResourceGroupName, RedisCacheManagementHelper.Location);
+                _redisCacheManagementHelper.TryCreatingCache(ResourceGroupName, RedisCacheName, RedisCacheManagementHelper.Location);
             }
             catch (Exception)
             {

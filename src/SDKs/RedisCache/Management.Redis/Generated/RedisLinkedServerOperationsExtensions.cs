@@ -13,6 +13,8 @@ namespace Microsoft.Azure.Management.Redis
     using Microsoft.Rest;
     using Microsoft.Rest.Azure;
     using Models;
+    using System.Collections;
+    using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -177,7 +179,7 @@ namespace Microsoft.Azure.Management.Redis
             /// <param name='name'>
             /// The name of the redis cache.
             /// </param>
-            public static RedisLinkedServerWithPropertiesList List(this IRedisLinkedServerOperations operations, string resourceGroupName, string name)
+            public static IList<RedisLinkedServerWithProperties> List(this IRedisLinkedServerOperations operations, string resourceGroupName, string name)
             {
                 return operations.ListAsync(resourceGroupName, name).GetAwaiter().GetResult();
             }
@@ -198,7 +200,7 @@ namespace Microsoft.Azure.Management.Redis
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<RedisLinkedServerWithPropertiesList> ListAsync(this IRedisLinkedServerOperations operations, string resourceGroupName, string name, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IList<RedisLinkedServerWithProperties>> ListAsync(this IRedisLinkedServerOperations operations, string resourceGroupName, string name, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListWithHttpMessagesAsync(resourceGroupName, name, null, cancellationToken).ConfigureAwait(false))
                 {
