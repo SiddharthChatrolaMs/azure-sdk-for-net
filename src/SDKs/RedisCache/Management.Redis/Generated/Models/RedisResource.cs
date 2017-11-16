@@ -36,6 +36,7 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </summary>
         /// <param name="location">The geo-location where the resource
         /// lives</param>
+        /// <param name="sku">The SKU of the Redis cache to deploy.</param>
         /// <param name="id">Resource ID.</param>
         /// <param name="name">Resource name.</param>
         /// <param name="type">Resource type.</param>
@@ -46,7 +47,8 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// etc.</param>
         /// <param name="enableNonSslPort">Specifies whether the non-ssl Redis
         /// server port (6379) is enabled.</param>
-        /// <param name="tenantSettings">tenantSettings</param>
+        /// <param name="tenantSettings">A dictionary of tenant
+        /// settings</param>
         /// <param name="shardCount">The number of shards to be created on a
         /// Premium Cluster Cache.</param>
         /// <param name="subnetId">The full resource ID of a subnet in a
@@ -54,7 +56,6 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// /subscriptions/{subid}/resourceGroups/{resourceGroupName}/Microsoft.{Network|ClassicNetwork}/VirtualNetworks/vnet1/subnets/subnet1</param>
         /// <param name="staticIP">Static IP address. Required when deploying a
         /// Redis cache inside an existing Azure Virtual Network.</param>
-        /// <param name="sku">The SKU of the Redis cache to deploy.</param>
         /// <param name="redisVersion">Redis version.</param>
         /// <param name="provisioningState">Redis instance provisioning
         /// status.</param>
@@ -66,16 +67,18 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// cache</param>
         /// <param name="linkedServers">List of the linked servers associated
         /// with the cache</param>
-        public RedisResource(string location, string id = default(string), string name = default(string), string type = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), string subnetId = default(string), string staticIP = default(string), Sku sku = default(Sku), string redisVersion = default(string), string provisioningState = default(string), string hostName = default(string), int? port = default(int?), int? sslPort = default(int?), RedisAccessKeys accessKeys = default(RedisAccessKeys), IList<string> linkedServers = default(IList<string>))
+        /// <param name="zones">A list of availability zones denoting where the
+        /// resource needs to come from.</param>
+        public RedisResource(string location, Sku sku, string id = default(string), string name = default(string), string type = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), string subnetId = default(string), string staticIP = default(string), string redisVersion = default(string), string provisioningState = default(string), string hostName = default(string), int? port = default(int?), int? sslPort = default(int?), RedisAccessKeys accessKeys = default(RedisAccessKeys), IList<RedisLinkedServer> linkedServers = default(IList<RedisLinkedServer>), IList<string> zones = default(IList<string>))
             : base(location, id, name, type, tags)
         {
             RedisConfiguration = redisConfiguration;
             EnableNonSslPort = enableNonSslPort;
             TenantSettings = tenantSettings;
             ShardCount = shardCount;
+            Sku = sku;
             SubnetId = subnetId;
             StaticIP = staticIP;
-            Sku = sku;
             RedisVersion = redisVersion;
             ProvisioningState = provisioningState;
             HostName = hostName;
@@ -83,6 +86,7 @@ namespace Microsoft.Azure.Management.Redis.Models
             SslPort = sslPort;
             AccessKeys = accessKeys;
             LinkedServers = linkedServers;
+            Zones = zones;
             CustomInit();
         }
 
@@ -107,7 +111,7 @@ namespace Microsoft.Azure.Management.Redis.Models
         public bool? EnableNonSslPort { get; set; }
 
         /// <summary>
-        /// Gets or sets tenantSettings
+        /// Gets or sets a dictionary of tenant settings
         /// </summary>
         [JsonProperty(PropertyName = "properties.tenantSettings")]
         public IDictionary<string, string> TenantSettings { get; set; }
@@ -118,6 +122,12 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.shardCount")]
         public int? ShardCount { get; set; }
+
+        /// <summary>
+        /// Gets or sets the SKU of the Redis cache to deploy.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.sku")]
+        public Sku Sku { get; set; }
 
         /// <summary>
         /// Gets or sets the full resource ID of a subnet in a virtual network
@@ -133,12 +143,6 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.staticIP")]
         public string StaticIP { get; set; }
-
-        /// <summary>
-        /// Gets or sets the SKU of the Redis cache to deploy.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.sku")]
-        public Sku Sku { get; set; }
 
         /// <summary>
         /// Gets redis version.
@@ -181,7 +185,14 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// Gets list of the linked servers associated with the cache
         /// </summary>
         [JsonProperty(PropertyName = "properties.linkedServers")]
-        public IList<string> LinkedServers { get; private set; }
+        public IList<RedisLinkedServer> LinkedServers { get; private set; }
+
+        /// <summary>
+        /// Gets or sets a list of availability zones denoting where the
+        /// resource needs to come from.
+        /// </summary>
+        [JsonProperty(PropertyName = "zones")]
+        public IList<string> Zones { get; set; }
 
         /// <summary>
         /// Validate the object.
@@ -192,6 +203,14 @@ namespace Microsoft.Azure.Management.Redis.Models
         public override void Validate()
         {
             base.Validate();
+            if (Sku == null)
+            {
+                throw new ValidationException(ValidationRules.CannotBeNull, "Sku");
+            }
+            if (Sku != null)
+            {
+                Sku.Validate();
+            }
             if (SubnetId != null)
             {
                 if (!System.Text.RegularExpressions.Regex.IsMatch(SubnetId, "^/subscriptions/[^/]*/resourceGroups/[^/]*/providers/Microsoft.(ClassicNetwork|Network)/virtualNetworks/[^/]*/subnets/[^/]*$"))
@@ -205,10 +224,6 @@ namespace Microsoft.Azure.Management.Redis.Models
                 {
                     throw new ValidationException(ValidationRules.Pattern, "StaticIP", "^\\d+\\.\\d+\\.\\d+\\.\\d+$");
                 }
-            }
-            if (Sku != null)
-            {
-                Sku.Validate();
             }
         }
     }

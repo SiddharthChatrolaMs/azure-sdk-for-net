@@ -21,7 +21,7 @@ namespace Microsoft.Azure.Management.Redis.Models
     /// Response to put/get patch schedules for Redis cache.
     /// </summary>
     [Rest.Serialization.JsonTransformation]
-    public partial class RedisPatchSchedule
+    public partial class RedisPatchSchedule : ProxyResource
     {
         /// <summary>
         /// Initializes a new instance of the RedisPatchSchedule class.
@@ -39,13 +39,9 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// <param name="id">Resource ID.</param>
         /// <param name="name">Resource name.</param>
         /// <param name="type">Resource type.</param>
-        /// <param name="location">Resource location.</param>
-        public RedisPatchSchedule(IList<ScheduleEntry> scheduleEntries, string id = default(string), string name = default(string), string type = default(string), string location = default(string))
+        public RedisPatchSchedule(IList<ScheduleEntry> scheduleEntries, string id = default(string), string name = default(string), string type = default(string))
+            : base(id, name, type)
         {
-            Id = id;
-            Name = name;
-            Type = type;
-            Location = location;
             ScheduleEntries = scheduleEntries;
             CustomInit();
         }
@@ -54,30 +50,6 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// An initialization method that performs custom operations like setting defaults
         /// </summary>
         partial void CustomInit();
-
-        /// <summary>
-        /// Gets resource ID.
-        /// </summary>
-        [JsonProperty(PropertyName = "id")]
-        public string Id { get; private set; }
-
-        /// <summary>
-        /// Gets resource name.
-        /// </summary>
-        [JsonProperty(PropertyName = "name")]
-        public string Name { get; private set; }
-
-        /// <summary>
-        /// Gets resource type.
-        /// </summary>
-        [JsonProperty(PropertyName = "type")]
-        public string Type { get; private set; }
-
-        /// <summary>
-        /// Gets resource location.
-        /// </summary>
-        [JsonProperty(PropertyName = "location")]
-        public string Location { get; private set; }
 
         /// <summary>
         /// Gets or sets list of patch schedules for a Redis cache.

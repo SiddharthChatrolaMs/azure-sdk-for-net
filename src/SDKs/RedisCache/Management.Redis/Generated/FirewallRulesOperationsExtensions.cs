@@ -79,7 +79,7 @@ namespace Microsoft.Azure.Management.Redis
             /// <param name='parameters'>
             /// Parameters supplied to the create or update redis firewall rule operation.
             /// </param>
-            public static RedisFirewallRule CreateOrUpdate(this IFirewallRulesOperations operations, string resourceGroupName, string cacheName, string ruleName, RedisFirewallRule parameters)
+            public static RedisFirewallRule CreateOrUpdate(this IFirewallRulesOperations operations, string resourceGroupName, string cacheName, string ruleName, RedisFirewallRuleCreateParameters parameters)
             {
                 return operations.CreateOrUpdateAsync(resourceGroupName, cacheName, ruleName, parameters).GetAwaiter().GetResult();
             }
@@ -105,7 +105,7 @@ namespace Microsoft.Azure.Management.Redis
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<RedisFirewallRule> CreateOrUpdateAsync(this IFirewallRulesOperations operations, string resourceGroupName, string cacheName, string ruleName, RedisFirewallRule parameters, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<RedisFirewallRule> CreateOrUpdateAsync(this IFirewallRulesOperations operations, string resourceGroupName, string cacheName, string ruleName, RedisFirewallRuleCreateParameters parameters, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.CreateOrUpdateWithHttpMessagesAsync(resourceGroupName, cacheName, ruleName, parameters, null, cancellationToken).ConfigureAwait(false))
                 {

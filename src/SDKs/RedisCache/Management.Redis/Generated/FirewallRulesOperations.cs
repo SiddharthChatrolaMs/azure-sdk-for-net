@@ -282,7 +282,7 @@ namespace Microsoft.Azure.Management.Redis
         /// <return>
         /// A response object containing the response body and response headers.
         /// </return>
-        public async Task<AzureOperationResponse<RedisFirewallRule>> CreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string cacheName, string ruleName, RedisFirewallRule parameters, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<AzureOperationResponse<RedisFirewallRule>> CreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string cacheName, string ruleName, RedisFirewallRuleCreateParameters parameters, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken))
         {
             if (resourceGroupName == null)
             {

@@ -79,7 +79,7 @@ namespace Microsoft.Azure.Management.Redis
         /// <exception cref="Microsoft.Rest.ValidationException">
         /// Thrown when a required parameter is null
         /// </exception>
-        Task<AzureOperationResponse<RedisFirewallRule>> CreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string cacheName, string ruleName, RedisFirewallRule parameters, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<AzureOperationResponse<RedisFirewallRule>> CreateOrUpdateWithHttpMessagesAsync(string resourceGroupName, string cacheName, string ruleName, RedisFirewallRuleCreateParameters parameters, Dictionary<string, List<string>> customHeaders = null, CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// Gets a single firewall rule in a specified redis cache.
         /// </summary>

@@ -21,7 +21,7 @@ namespace Microsoft.Azure.Management.Redis.Models
     /// Parameters supplied to the Create Redis operation.
     /// </summary>
     [Rest.Serialization.JsonTransformation]
-    public partial class RedisCreateParameters : TrackedResource
+    public partial class RedisCreateParameters
     {
         /// <summary>
         /// Initializes a new instance of the RedisCreateParameters class.
@@ -34,20 +34,17 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// <summary>
         /// Initializes a new instance of the RedisCreateParameters class.
         /// </summary>
+        /// <param name="sku">The SKU of the Redis cache to deploy.</param>
         /// <param name="location">The geo-location where the resource
         /// lives</param>
-        /// <param name="sku">The SKU of the Redis cache to deploy.</param>
-        /// <param name="id">Resource ID.</param>
-        /// <param name="name">Resource name.</param>
-        /// <param name="type">Resource type.</param>
-        /// <param name="tags">Resource tags.</param>
         /// <param name="redisConfiguration">All Redis Settings. Few possible
         /// keys:
         /// rdb-backup-enabled,rdb-storage-connection-string,rdb-backup-frequency,maxmemory-delta,maxmemory-policy,notify-keyspace-events,maxmemory-samples,slowlog-log-slower-than,slowlog-max-len,list-max-ziplist-entries,list-max-ziplist-value,hash-max-ziplist-entries,hash-max-ziplist-value,set-max-intset-entries,zset-max-ziplist-entries,zset-max-ziplist-value
         /// etc.</param>
         /// <param name="enableNonSslPort">Specifies whether the non-ssl Redis
         /// server port (6379) is enabled.</param>
-        /// <param name="tenantSettings">tenantSettings</param>
+        /// <param name="tenantSettings">A dictionary of tenant
+        /// settings</param>
         /// <param name="shardCount">The number of shards to be created on a
         /// Premium Cluster Cache.</param>
         /// <param name="subnetId">The full resource ID of a subnet in a
@@ -55,16 +52,19 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// /subscriptions/{subid}/resourceGroups/{resourceGroupName}/Microsoft.{Network|ClassicNetwork}/VirtualNetworks/vnet1/subnets/subnet1</param>
         /// <param name="staticIP">Static IP address. Required when deploying a
         /// Redis cache inside an existing Azure Virtual Network.</param>
-        public RedisCreateParameters(string location, Sku sku, string id = default(string), string name = default(string), string type = default(string), IDictionary<string, string> tags = default(IDictionary<string, string>), IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), string subnetId = default(string), string staticIP = default(string))
-            : base(location, id, name, type, tags)
+        /// <param name="zones">A list of availability zones denoting where the
+        /// resource needs to come from.</param>
+        public RedisCreateParameters(Sku sku, string location, IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), string subnetId = default(string), string staticIP = default(string), IList<string> zones = default(IList<string>))
         {
             RedisConfiguration = redisConfiguration;
             EnableNonSslPort = enableNonSslPort;
             TenantSettings = tenantSettings;
             ShardCount = shardCount;
+            Sku = sku;
             SubnetId = subnetId;
             StaticIP = staticIP;
-            Sku = sku;
+            Zones = zones;
+            Location = location;
             CustomInit();
         }
 
@@ -89,7 +89,7 @@ namespace Microsoft.Azure.Management.Redis.Models
         public bool? EnableNonSslPort { get; set; }
 
         /// <summary>
-        /// Gets or sets tenantSettings
+        /// Gets or sets a dictionary of tenant settings
         /// </summary>
         [JsonProperty(PropertyName = "properties.tenantSettings")]
         public IDictionary<string, string> TenantSettings { get; set; }
@@ -100,6 +100,12 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.shardCount")]
         public int? ShardCount { get; set; }
+
+        /// <summary>
+        /// Gets or sets the SKU of the Redis cache to deploy.
+        /// </summary>
+        [JsonProperty(PropertyName = "properties.sku")]
+        public Sku Sku { get; set; }
 
         /// <summary>
         /// Gets or sets the full resource ID of a subnet in a virtual network
@@ -117,10 +123,17 @@ namespace Microsoft.Azure.Management.Redis.Models
         public string StaticIP { get; set; }
 
         /// <summary>
-        /// Gets or sets the SKU of the Redis cache to deploy.
+        /// Gets or sets a list of availability zones denoting where the
+        /// resource needs to come from.
         /// </summary>
-        [JsonProperty(PropertyName = "properties.sku")]
-        public Sku Sku { get; set; }
+        [JsonProperty(PropertyName = "zones")]
+        public IList<string> Zones { get; set; }
+
+        /// <summary>
+        /// Gets or sets the geo-location where the resource lives
+        /// </summary>
+        [JsonProperty(PropertyName = "location")]
+        public string Location { get; set; }
 
         /// <summary>
         /// Validate the object.
@@ -128,12 +141,19 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// <exception cref="ValidationException">
         /// Thrown if validation fails
         /// </exception>
-        public override void Validate()
+        public virtual void Validate()
         {
-            base.Validate();
             if (Sku == null)
             {
                 throw new ValidationException(ValidationRules.CannotBeNull, "Sku");
+            }
+            if (Location == null)
+            {
+                throw new ValidationException(ValidationRules.CannotBeNull, "Location");
+            }
+            if (Sku != null)
+            {
+                Sku.Validate();
             }
             if (SubnetId != null)
             {
@@ -148,10 +168,6 @@ namespace Microsoft.Azure.Management.Redis.Models
                 {
                     throw new ValidationException(ValidationRules.Pattern, "StaticIP", "^\\d+\\.\\d+\\.\\d+\\.\\d+$");
                 }
-            }
-            if (Sku != null)
-            {
-                Sku.Validate();
             }
         }
     }

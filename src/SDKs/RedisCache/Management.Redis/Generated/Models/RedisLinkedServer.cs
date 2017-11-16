@@ -14,25 +14,25 @@ namespace Microsoft.Azure.Management.Redis.Models
     using System.Linq;
 
     /// <summary>
-    /// Response to force reboot for Redis cache.
+    /// Linked server Id
     /// </summary>
-    public partial class RedisForceRebootResponse
+    public partial class RedisLinkedServer
     {
         /// <summary>
-        /// Initializes a new instance of the RedisForceRebootResponse class.
+        /// Initializes a new instance of the RedisLinkedServer class.
         /// </summary>
-        public RedisForceRebootResponse()
+        public RedisLinkedServer()
         {
             CustomInit();
         }
 
         /// <summary>
-        /// Initializes a new instance of the RedisForceRebootResponse class.
+        /// Initializes a new instance of the RedisLinkedServer class.
         /// </summary>
-        /// <param name="message">Status message</param>
-        public RedisForceRebootResponse(string message = default(string))
+        /// <param name="id">Linked server Id.</param>
+        public RedisLinkedServer(string id = default(string))
         {
-            Message = message;
+            Id = id;
             CustomInit();
         }
 
@@ -42,10 +42,10 @@ namespace Microsoft.Azure.Management.Redis.Models
         partial void CustomInit();
 
         /// <summary>
-        /// Gets status message
+        /// Gets linked server Id.
         /// </summary>
-        [JsonProperty(PropertyName = "message")]
-        public string Message { get; private set; }
+        [JsonProperty(PropertyName = "id")]
+        public string Id { get; private set; }
 
     }
 }

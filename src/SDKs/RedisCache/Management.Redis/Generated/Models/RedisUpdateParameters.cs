@@ -40,24 +40,18 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// etc.</param>
         /// <param name="enableNonSslPort">Specifies whether the non-ssl Redis
         /// server port (6379) is enabled.</param>
-        /// <param name="tenantSettings">tenantSettings</param>
+        /// <param name="tenantSettings">A dictionary of tenant
+        /// settings</param>
         /// <param name="shardCount">The number of shards to be created on a
         /// Premium Cluster Cache.</param>
-        /// <param name="subnetId">The full resource ID of a subnet in a
-        /// virtual network to deploy the Redis cache in. Example format:
-        /// /subscriptions/{subid}/resourceGroups/{resourceGroupName}/Microsoft.{Network|ClassicNetwork}/VirtualNetworks/vnet1/subnets/subnet1</param>
-        /// <param name="staticIP">Static IP address. Required when deploying a
-        /// Redis cache inside an existing Azure Virtual Network.</param>
         /// <param name="sku">The SKU of the Redis cache to deploy.</param>
         /// <param name="tags">Resource tags.</param>
-        public RedisUpdateParameters(IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), string subnetId = default(string), string staticIP = default(string), Sku sku = default(Sku), IDictionary<string, string> tags = default(IDictionary<string, string>))
+        public RedisUpdateParameters(IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), Sku sku = default(Sku), IDictionary<string, string> tags = default(IDictionary<string, string>))
         {
             RedisConfiguration = redisConfiguration;
             EnableNonSslPort = enableNonSslPort;
             TenantSettings = tenantSettings;
             ShardCount = shardCount;
-            SubnetId = subnetId;
-            StaticIP = staticIP;
             Sku = sku;
             Tags = tags;
             CustomInit();
@@ -84,7 +78,7 @@ namespace Microsoft.Azure.Management.Redis.Models
         public bool? EnableNonSslPort { get; set; }
 
         /// <summary>
-        /// Gets or sets tenantSettings
+        /// Gets or sets a dictionary of tenant settings
         /// </summary>
         [JsonProperty(PropertyName = "properties.tenantSettings")]
         public IDictionary<string, string> TenantSettings { get; set; }
@@ -95,21 +89,6 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </summary>
         [JsonProperty(PropertyName = "properties.shardCount")]
         public int? ShardCount { get; set; }
-
-        /// <summary>
-        /// Gets or sets the full resource ID of a subnet in a virtual network
-        /// to deploy the Redis cache in. Example format:
-        /// /subscriptions/{subid}/resourceGroups/{resourceGroupName}/Microsoft.{Network|ClassicNetwork}/VirtualNetworks/vnet1/subnets/subnet1
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.subnetId")]
-        public string SubnetId { get; set; }
-
-        /// <summary>
-        /// Gets or sets static IP address. Required when deploying a Redis
-        /// cache inside an existing Azure Virtual Network.
-        /// </summary>
-        [JsonProperty(PropertyName = "properties.staticIP")]
-        public string StaticIP { get; set; }
 
         /// <summary>
         /// Gets or sets the SKU of the Redis cache to deploy.
@@ -131,20 +110,6 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </exception>
         public virtual void Validate()
         {
-            if (SubnetId != null)
-            {
-                if (!System.Text.RegularExpressions.Regex.IsMatch(SubnetId, "^/subscriptions/[^/]*/resourceGroups/[^/]*/providers/Microsoft.(ClassicNetwork|Network)/virtualNetworks/[^/]*/subnets/[^/]*$"))
-                {
-                    throw new ValidationException(ValidationRules.Pattern, "SubnetId", "^/subscriptions/[^/]*/resourceGroups/[^/]*/providers/Microsoft.(ClassicNetwork|Network)/virtualNetworks/[^/]*/subnets/[^/]*$");
-                }
-            }
-            if (StaticIP != null)
-            {
-                if (!System.Text.RegularExpressions.Regex.IsMatch(StaticIP, "^\\d+\\.\\d+\\.\\d+\\.\\d+$"))
-                {
-                    throw new ValidationException(ValidationRules.Pattern, "StaticIP", "^\\d+\\.\\d+\\.\\d+\\.\\d+$");
-                }
-            }
             if (Sku != null)
             {
                 Sku.Validate();

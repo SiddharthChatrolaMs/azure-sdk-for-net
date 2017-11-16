@@ -19,7 +19,7 @@ namespace Microsoft.Azure.Management.Redis.Models
     /// Response to put/get linked server (with properties) for Redis cache.
     /// </summary>
     [Rest.Serialization.JsonTransformation]
-    public partial class RedisLinkedServerWithProperties
+    public partial class RedisLinkedServerWithProperties : ProxyResource
     {
         /// <summary>
         /// Initializes a new instance of the RedisLinkedServerWithProperties
@@ -46,10 +46,8 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// <param name="provisioningState">Terminal state of the link between
         /// primary and secondary redis cache.</param>
         public RedisLinkedServerWithProperties(string linkedRedisCacheId, string linkedRedisCacheLocation, ReplicationRole serverRole, string id = default(string), string name = default(string), string type = default(string), string provisioningState = default(string))
+            : base(id, name, type)
         {
-            Id = id;
-            Name = name;
-            Type = type;
             LinkedRedisCacheId = linkedRedisCacheId;
             LinkedRedisCacheLocation = linkedRedisCacheLocation;
             ServerRole = serverRole;
@@ -61,24 +59,6 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// An initialization method that performs custom operations like setting defaults
         /// </summary>
         partial void CustomInit();
-
-        /// <summary>
-        /// Gets resource ID.
-        /// </summary>
-        [JsonProperty(PropertyName = "id")]
-        public string Id { get; private set; }
-
-        /// <summary>
-        /// Gets resource name.
-        /// </summary>
-        [JsonProperty(PropertyName = "name")]
-        public string Name { get; private set; }
-
-        /// <summary>
-        /// Gets resource type.
-        /// </summary>
-        [JsonProperty(PropertyName = "type")]
-        public string Type { get; private set; }
 
         /// <summary>
         /// Gets or sets fully qualified resourceId of the linked redis cache.

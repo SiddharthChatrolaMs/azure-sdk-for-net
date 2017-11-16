@@ -13,8 +13,6 @@ namespace Microsoft.Azure.Management.Redis
     using Microsoft.Rest;
     using Microsoft.Rest.Azure;
     using Models;
-    using System.Collections;
-    using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -179,7 +177,7 @@ namespace Microsoft.Azure.Management.Redis
             /// <param name='name'>
             /// The name of the redis cache.
             /// </param>
-            public static IList<RedisLinkedServerWithProperties> List(this IRedisLinkedServerOperations operations, string resourceGroupName, string name)
+            public static IPage<RedisLinkedServerWithProperties> List(this IRedisLinkedServerOperations operations, string resourceGroupName, string name)
             {
                 return operations.ListAsync(resourceGroupName, name).GetAwaiter().GetResult();
             }
@@ -200,7 +198,7 @@ namespace Microsoft.Azure.Management.Redis
             /// <param name='cancellationToken'>
             /// The cancellation token.
             /// </param>
-            public static async Task<IList<RedisLinkedServerWithProperties>> ListAsync(this IRedisLinkedServerOperations operations, string resourceGroupName, string name, CancellationToken cancellationToken = default(CancellationToken))
+            public static async Task<IPage<RedisLinkedServerWithProperties>> ListAsync(this IRedisLinkedServerOperations operations, string resourceGroupName, string name, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.ListWithHttpMessagesAsync(resourceGroupName, name, null, cancellationToken).ConfigureAwait(false))
                 {
@@ -255,6 +253,42 @@ namespace Microsoft.Azure.Management.Redis
             public static async Task<RedisLinkedServerWithProperties> BeginCreateAsync(this IRedisLinkedServerOperations operations, string resourceGroupName, string name, string linkedServerName, RedisLinkedServerCreateParameters parameters, CancellationToken cancellationToken = default(CancellationToken))
             {
                 using (var _result = await operations.BeginCreateWithHttpMessagesAsync(resourceGroupName, name, linkedServerName, parameters, null, cancellationToken).ConfigureAwait(false))
+                {
+                    return _result.Body;
+                }
+            }
+
+            /// <summary>
+            /// Gets the list of linked servers associated with this redis cache (requires
+            /// Premium SKU).
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='nextPageLink'>
+            /// The NextLink from the previous successful call to List operation.
+            /// </param>
+            public static IPage<RedisLinkedServerWithProperties> ListNext(this IRedisLinkedServerOperations operations, string nextPageLink)
+            {
+                return operations.ListNextAsync(nextPageLink).GetAwaiter().GetResult();
+            }
+
+            /// <summary>
+            /// Gets the list of linked servers associated with this redis cache (requires
+            /// Premium SKU).
+            /// </summary>
+            /// <param name='operations'>
+            /// The operations group for this extension method.
+            /// </param>
+            /// <param name='nextPageLink'>
+            /// The NextLink from the previous successful call to List operation.
+            /// </param>
+            /// <param name='cancellationToken'>
+            /// The cancellation token.
+            /// </param>
+            public static async Task<IPage<RedisLinkedServerWithProperties>> ListNextAsync(this IRedisLinkedServerOperations operations, string nextPageLink, CancellationToken cancellationToken = default(CancellationToken))
+            {
+                using (var _result = await operations.ListNextWithHttpMessagesAsync(nextPageLink, null, cancellationToken).ConfigureAwait(false))
                 {
                     return _result.Body;
                 }
