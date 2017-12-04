@@ -1,13 +1,13 @@
 {
   "Entries": [
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/hydra17397/providers/Microsoft.Cache/Redis/hydracache1/listKeys?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL2h5ZHJhMTczOTcvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9SZWRpcy9oeWRyYWNhY2hlMS9saXN0S2V5cz9hcGktdmVyc2lvbj0yMDE3LTAyLTAx",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisGetList7416/providers/Microsoft.Cache/Redis/RedisGetList5992/listKeys?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzR2V0TGlzdDc0MTYvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9SZWRpcy9SZWRpc0dldExpc3Q1OTkyL2xpc3RLZXlzP2FwaS12ZXJzaW9uPTIwMTctMTAtMDE=",
       "RequestMethod": "POST",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "4cf09c80-cba2-45a1-8fe6-fa5ae181a583"
+          "ab901cd7-1bc9-4d61-b39f-cd08f2a58dbc"
         ],
         "accept-language": [
           "en-US"
@@ -17,7 +17,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"primaryKey\": \"Nr80eVPF00C4gbBcSaTcAdGvdOIbE6m2YLQAYQnp0BQ=\",\r\n  \"secondaryKey\": \"S5MhS18Vb2HaBWXpd1PMrZ62zaXgA/RENGb1PZkBkPQ=\"\r\n}",
+      "ResponseBody": "{\r\n  \"primaryKey\": \"/L5uWBc26Kzf11lTYC+f6rQgzzSUXe6cTYdY0C0VWGo=\",\r\n  \"secondaryKey\": \"tJ5Hf4RM59iRD6WOT532qoSTGNa5hoDXX9XKqFNMFBU=\"\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -29,7 +29,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 23:07:10 GMT"
+          "Sat, 18 Nov 2017 02:14:35 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -44,10 +44,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "0fa41d4a-f6b2-481c-9226-00b3059f2150"
+          "57f1e86f-d4b1-40d0-a1b6-00b8800d3a01"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -59,10 +59,10 @@
           "1199"
         ],
         "x-ms-correlation-request-id": [
-          "50142cb2-32d0-4554-a080-0d6287265484"
+          "ab3ed5f3-51aa-4a2f-b957-82db8eccba2f"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T230711Z:50142cb2-32d0-4554-a080-0d6287265484"
+          "WESTUS2:20171118T021435Z:ab3ed5f3-51aa-4a2f-b957-82db8eccba2f"
         ]
       },
       "StatusCode": 200

@@ -1,19 +1,19 @@
 {
   "Entries": [
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9SZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL1JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "PUT",
-      "RequestBody": "{\r\n  \"properties\": {\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    }\r\n  },\r\n  \"location\": \"North Central US\"\r\n}",
+      "RequestBody": "{\r\n  \"properties\": {\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    }\r\n  },\r\n  \"location\": \"East US\"\r\n}",
       "RequestHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
         ],
         "Content-Length": [
-          "151"
+          "142"
         ],
         "x-ms-client-request-id": [
-          "14128ffe-ca52-4e82-aa92-f5ec11b18774"
+          "2fc70655-4f79-4d7e-8ada-3a77171b186e"
         ],
         "accept-language": [
           "en-US"
@@ -23,10 +23,10 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": {\r\n      \"primaryKey\": \"B9zGGuPDneSFiNpSw/OB6WvT2cI5Jbwquw5yhPoUYY4=\",\r\n      \"secondaryKey\": \"aBom41qrFjHYOV91ZCOEqlqaBqK7Xt2zYZ7pU3ehh2E=\"\r\n    },\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": {\r\n      \"primaryKey\": \"5V0buXkhkarKEWJhMyGJ685LrzOlYssvJ20fh5OBoM0=\",\r\n      \"secondaryKey\": \"MLDs+QCctrhH60jW9WtRM0acXOe9mRshrURb7DsQpJU=\"\r\n    },\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Length": [
-          "728"
+          "770"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -38,22 +38,22 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:08:37 GMT"
+          "Sat, 18 Nov 2017 02:15:07 GMT"
         ],
         "Pragma": [
           "no-cache"
         ],
         "Location": [
-          "https://management.azure.com/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01"
+          "https://management.azure.com/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01"
         ],
         "Server": [
           "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-request-id": [
-          "d8639614-fd1c-4d25-8a8b-3d0be964cb9a"
+          "8dfc9f7a-8f74-4d30-9fbc-fbc689d5de5f"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -65,17 +65,17 @@
           "1199"
         ],
         "x-ms-correlation-request-id": [
-          "af89cb83-dfe9-4132-9a9d-cb7a69b5cd53"
+          "971d9bb0-94db-4879-81c8-9e920a0e2fe2"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T210838Z:af89cb83-dfe9-4132-9a9d-cb7a69b5cd53"
+          "WESTUS2:20171118T021507Z:971d9bb0-94db-4879-81c8-9e920a0e2fe2"
         ]
       },
       "StatusCode": 201
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -84,7 +84,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -96,7 +96,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:09:07 GMT"
+          "Sat, 18 Nov 2017 02:15:37 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -111,10 +111,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "5f9811d8-bd3a-4da6-9d85-ca6cbcdb2dbb"
+          "894a570d-559d-4a36-a900-c30ccb5f00fe"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -126,17 +126,17 @@
           "14997"
         ],
         "x-ms-correlation-request-id": [
-          "0d1e332e-1fd9-45d3-93b0-6c9ceaba2b3a"
+          "10e95183-3399-4979-8bc7-38142d9be41c"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T210908Z:0d1e332e-1fd9-45d3-93b0-6c9ceaba2b3a"
+          "WESTUS2:20171118T021537Z:10e95183-3399-4979-8bc7-38142d9be41c"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -145,7 +145,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -157,7 +157,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:09:38 GMT"
+          "Sat, 18 Nov 2017 02:16:07 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -172,10 +172,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "a9788e12-7b85-4ed5-a9a2-d531efd559c3"
+          "3de936d0-9b8e-4782-af7b-5febbe91bc58"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -187,17 +187,17 @@
           "14996"
         ],
         "x-ms-correlation-request-id": [
-          "de404fb9-05f9-41c7-a448-6e1d5b21a000"
+          "12813a3e-3a34-4948-b9a1-15b38ea95ee1"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T210938Z:de404fb9-05f9-41c7-a448-6e1d5b21a000"
+          "WESTUS2:20171118T021608Z:12813a3e-3a34-4948-b9a1-15b38ea95ee1"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -206,7 +206,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -218,7 +218,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:10:08 GMT"
+          "Sat, 18 Nov 2017 02:16:38 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -233,10 +233,71 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "2dfe3318-7cd6-4cb6-95cb-1781188edf08"
+          "8ff006cc-6c73-4723-8a4a-71b06584e229"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "x-content-type-options": [
+          "nosniff"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "14995"
+        ],
+        "x-ms-correlation-request-id": [
+          "98001749-c138-4a17-8401-3b35a2a24c72"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS2:20171118T021638Z:98001749-c138-4a17-8401-3b35a2a24c72"
+        ]
+      },
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "User-Agent": [
+          "FxVersion/4.6.25211.01",
+          "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
+      "ResponseHeaders": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Date": [
+          "Sat, 18 Nov 2017 02:17:08 GMT"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "Transfer-Encoding": [
+          "chunked"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "Vary": [
+          "Accept-Encoding"
+        ],
+        "x-ms-request-id": [
+          "09712c40-4cbf-4e9e-9963-21948b7e29f9"
+        ],
+        "x-rp-server-mvid": [
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -248,17 +309,17 @@
           "14994"
         ],
         "x-ms-correlation-request-id": [
-          "40f8a49d-0efa-4f12-9e53-4a25cbd9e85b"
+          "d8d11801-b7fb-4207-8133-e292b2c0ebb2"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211008Z:40f8a49d-0efa-4f12-9e53-4a25cbd9e85b"
+          "WESTUS2:20171118T021708Z:d8d11801-b7fb-4207-8133-e292b2c0ebb2"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -267,7 +328,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -279,7 +340,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:10:38 GMT"
+          "Sat, 18 Nov 2017 02:17:38 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -294,10 +355,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "54085c87-06b1-4ab6-8fc4-366249e6fd1a"
+          "c363ca47-5998-478a-9060-9ed264050c65"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -309,17 +370,17 @@
           "14993"
         ],
         "x-ms-correlation-request-id": [
-          "f52269aa-05c1-4f03-b23b-44c12282027b"
+          "fd9ca38b-fcb8-4e8e-9c8b-e207904f4a03"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211038Z:f52269aa-05c1-4f03-b23b-44c12282027b"
+          "WESTUS2:20171118T021738Z:fd9ca38b-fcb8-4e8e-9c8b-e207904f4a03"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -328,7 +389,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -340,7 +401,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:11:09 GMT"
+          "Sat, 18 Nov 2017 02:18:08 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -355,10 +416,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "0ad4176a-edd4-41f8-842c-1f63f13d8a74"
+          "9a2a1de0-b4b4-4d58-9fcc-b84c04438725"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -370,17 +431,17 @@
           "14992"
         ],
         "x-ms-correlation-request-id": [
-          "47c5c97e-e1fd-4ad0-bb12-ec87a7a7a22c"
+          "66a06101-dd77-43c2-be12-85a170132bda"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211109Z:47c5c97e-e1fd-4ad0-bb12-ec87a7a7a22c"
+          "WESTUS2:20171118T021809Z:66a06101-dd77-43c2-be12-85a170132bda"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -389,7 +450,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -401,7 +462,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:11:39 GMT"
+          "Sat, 18 Nov 2017 02:18:39 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -416,10 +477,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "0ed3b8d2-248b-4ead-aed5-13b75da5069d"
+          "5ac13792-0980-4b99-b5b3-a4dac1587cb9"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -431,17 +492,17 @@
           "14991"
         ],
         "x-ms-correlation-request-id": [
-          "a7b30015-1b7b-4f98-af20-2bd50cb886f7"
+          "54a7ca56-26df-4078-8d9f-a91b1cb960dc"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211140Z:a7b30015-1b7b-4f98-af20-2bd50cb886f7"
+          "WESTUS2:20171118T021839Z:54a7ca56-26df-4078-8d9f-a91b1cb960dc"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -450,7 +511,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -462,7 +523,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:12:10 GMT"
+          "Sat, 18 Nov 2017 02:19:09 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -477,10 +538,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "31b9db3b-db0a-4188-a114-7f82bf115953"
+          "341341c8-7e53-4a14-9e69-44795e06dcd5"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -492,17 +553,17 @@
           "14990"
         ],
         "x-ms-correlation-request-id": [
-          "7ead1321-9046-4bfe-81b6-8dce033de71c"
+          "c2da19b4-d951-4f12-9a4d-df061a631b99"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211210Z:7ead1321-9046-4bfe-81b6-8dce033de71c"
+          "WESTUS2:20171118T021909Z:c2da19b4-d951-4f12-9a4d-df061a631b99"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -511,7 +572,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -523,7 +584,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:12:40 GMT"
+          "Sat, 18 Nov 2017 02:19:39 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -538,10 +599,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "7336889c-6b01-4f00-8f33-ee35bfdb7f2a"
+          "7273bd29-2e6a-425d-9588-206c764fa185"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -553,17 +614,17 @@
           "14989"
         ],
         "x-ms-correlation-request-id": [
-          "dd75090b-7eab-49a9-b84c-861305c102e7"
+          "4fb3de52-d285-4970-947a-a98196d84c02"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211240Z:dd75090b-7eab-49a9-b84c-861305c102e7"
+          "WESTUS2:20171118T021939Z:4fb3de52-d285-4970-947a-a98196d84c02"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -572,7 +633,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -584,7 +645,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:13:09 GMT"
+          "Sat, 18 Nov 2017 02:20:09 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -599,10 +660,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "0105dcb4-ff49-4eb4-b033-080e90cd6ec3"
+          "7cebe5df-76d3-4c3b-a5cb-b389ef83c8f9"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -614,17 +675,17 @@
           "14988"
         ],
         "x-ms-correlation-request-id": [
-          "a3d8ee62-3ff6-4e0a-bd16-65dfe23a6c54"
+          "78702db3-f91c-4cd1-9d74-7554d5b9b930"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211310Z:a3d8ee62-3ff6-4e0a-bd16-65dfe23a6c54"
+          "WESTUS2:20171118T022010Z:78702db3-f91c-4cd1-9d74-7554d5b9b930"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -633,7 +694,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -645,7 +706,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:13:40 GMT"
+          "Sat, 18 Nov 2017 02:20:40 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -660,10 +721,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "ee5bdd06-6aba-4b55-b82b-c85a3ea1bbaf"
+          "57547aeb-6a68-4d93-a5c2-e877ce966269"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -675,17 +736,17 @@
           "14987"
         ],
         "x-ms-correlation-request-id": [
-          "3c03f225-3093-4e69-af9d-d12e1a127f1a"
+          "d5376de6-9abe-4685-9334-4492afde8cb5"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211340Z:3c03f225-3093-4e69-af9d-d12e1a127f1a"
+          "WESTUS2:20171118T022040Z:d5376de6-9abe-4685-9334-4492afde8cb5"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -694,7 +755,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -706,7 +767,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:14:10 GMT"
+          "Sat, 18 Nov 2017 02:21:10 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -721,10 +782,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "8ac82bfe-d0a6-425b-ae1b-fb74ac7c068a"
+          "b11ba019-4d42-4b83-8e39-8663729f981a"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -736,17 +797,17 @@
           "14986"
         ],
         "x-ms-correlation-request-id": [
-          "be355e6d-5975-47a4-8ff6-82d5416582ff"
+          "078a6632-3e67-4c8f-b0b5-e0286ed11b25"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211410Z:be355e6d-5975-47a4-8ff6-82d5416582ff"
+          "WESTUS2:20171118T022110Z:078a6632-3e67-4c8f-b0b5-e0286ed11b25"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -755,7 +816,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -767,7 +828,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:14:40 GMT"
+          "Sat, 18 Nov 2017 02:21:40 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -782,10 +843,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "c8cf2e64-43da-4adb-b380-0f4c558c7633"
+          "3d32a0ff-0614-498a-b906-5fc90ef8fc2f"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -797,17 +858,17 @@
           "14985"
         ],
         "x-ms-correlation-request-id": [
-          "48463b01-ecd3-4c18-aaa1-36c9c0f764b0"
+          "73218ef0-927b-4ad1-b3e2-6c5f3918c097"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211441Z:48463b01-ecd3-4c18-aaa1-36c9c0f764b0"
+          "WESTUS2:20171118T022141Z:73218ef0-927b-4ad1-b3e2-6c5f3918c097"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -816,7 +877,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -828,7 +889,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:15:10 GMT"
+          "Sat, 18 Nov 2017 02:22:10 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -843,71 +904,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "1f44d02a-4fcf-4291-8330-c707ee85769b"
+          "17f1522c-372e-474c-9d17-d99fdfc0d13e"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
-        ],
-        "Strict-Transport-Security": [
-          "max-age=31536000; includeSubDomains"
-        ],
-        "x-content-type-options": [
-          "nosniff"
-        ],
-        "x-ms-ratelimit-remaining-subscription-reads": [
-          "14985"
-        ],
-        "x-ms-correlation-request-id": [
-          "19db2fc6-fc62-4edd-8e83-6cae4676df49"
-        ],
-        "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211511Z:19db2fc6-fc62-4edd-8e83-6cae4676df49"
-        ]
-      },
-      "StatusCode": 200
-    },
-    {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
-      "RequestMethod": "GET",
-      "RequestBody": "",
-      "RequestHeaders": {
-        "User-Agent": [
-          "FxVersion/4.6.25211.01",
-          "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
-        ]
-      },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
-      "ResponseHeaders": {
-        "Content-Type": [
-          "application/json; charset=utf-8"
-        ],
-        "Expires": [
-          "-1"
-        ],
-        "Cache-Control": [
-          "no-cache"
-        ],
-        "Date": [
-          "Mon, 13 Nov 2017 21:15:40 GMT"
-        ],
-        "Pragma": [
-          "no-cache"
-        ],
-        "Transfer-Encoding": [
-          "chunked"
-        ],
-        "Server": [
-          "Microsoft-HTTPAPI/2.0"
-        ],
-        "Vary": [
-          "Accept-Encoding"
-        ],
-        "x-ms-request-id": [
-          "978c9c9c-d358-4202-8012-d3583c1fb523"
-        ],
-        "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -919,17 +919,17 @@
           "14984"
         ],
         "x-ms-correlation-request-id": [
-          "a1d27b25-a5e4-4aea-b4c4-9c919468ba20"
+          "0bb0fb87-09b6-422f-9776-429d489fc97d"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211541Z:a1d27b25-a5e4-4aea-b4c4-9c919468ba20"
+          "WESTUS2:20171118T022211Z:0bb0fb87-09b6-422f-9776-429d489fc97d"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -938,7 +938,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -950,7 +950,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:16:10 GMT"
+          "Sat, 18 Nov 2017 02:22:41 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -965,10 +965,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "21055c13-04c4-4ae8-aab2-bbfa81b42f73"
+          "87661464-c429-4630-9491-9b14c797dc97"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -980,17 +980,17 @@
           "14983"
         ],
         "x-ms-correlation-request-id": [
-          "10e4e415-eaeb-41c4-a321-617a9fb28cce"
+          "a8a6ce15-7287-4c7e-bb51-ec307fb847be"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211611Z:10e4e415-eaeb-41c4-a321-617a9fb28cce"
+          "WESTUS2:20171118T022241Z:a8a6ce15-7287-4c7e-bb51-ec307fb847be"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -999,7 +999,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1011,7 +1011,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:16:40 GMT"
+          "Sat, 18 Nov 2017 02:23:11 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1026,10 +1026,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "d188ad86-9929-40e3-b1a2-d2dc69f5e240"
+          "2f3b598a-4793-40b4-a6ad-11c360c1187b"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1041,17 +1041,17 @@
           "14982"
         ],
         "x-ms-correlation-request-id": [
-          "bd5aa594-858f-4a94-92d5-06c00068e94e"
+          "cf0a25c5-65e0-49b3-99f3-178798518e1f"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211641Z:bd5aa594-858f-4a94-92d5-06c00068e94e"
+          "WESTUS2:20171118T022311Z:cf0a25c5-65e0-49b3-99f3-178798518e1f"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1060,7 +1060,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1072,7 +1072,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:17:12 GMT"
+          "Sat, 18 Nov 2017 02:23:41 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1087,10 +1087,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "28294fbf-e467-4f08-8836-a337b4d3b160"
+          "f481d6b9-7bbb-406c-b605-69c4c1edfa75"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1102,17 +1102,17 @@
           "14981"
         ],
         "x-ms-correlation-request-id": [
-          "1776232c-b485-453c-988b-665094a865c4"
+          "f66436fa-892b-49fe-ba9b-c3b26a0f249b"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211712Z:1776232c-b485-453c-988b-665094a865c4"
+          "WESTUS2:20171118T022341Z:f66436fa-892b-49fe-ba9b-c3b26a0f249b"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1121,7 +1121,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1133,7 +1133,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:17:42 GMT"
+          "Sat, 18 Nov 2017 02:24:11 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1148,10 +1148,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "cc2aa739-643f-463b-8891-b1cb2b35191c"
+          "9204cd71-f168-4dbe-b8f3-d1387b77443e"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1163,17 +1163,17 @@
           "14980"
         ],
         "x-ms-correlation-request-id": [
-          "bd5cc2f8-bbf7-4bb5-9096-f96a63388039"
+          "e9f9b699-14b9-43f3-bb4d-1b0a67682cca"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211742Z:bd5cc2f8-bbf7-4bb5-9096-f96a63388039"
+          "WESTUS2:20171118T022411Z:e9f9b699-14b9-43f3-bb4d-1b0a67682cca"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1182,7 +1182,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1194,7 +1194,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:18:12 GMT"
+          "Sat, 18 Nov 2017 02:24:41 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1209,10 +1209,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "6062fe4b-e790-4739-9901-10ad88aa2211"
+          "d6993f8c-c740-4f34-9069-d2db685bd32d"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1224,17 +1224,17 @@
           "14979"
         ],
         "x-ms-correlation-request-id": [
-          "274aa0f9-3d6e-4415-b175-37428c5dfdee"
+          "e18ca4d0-02c8-48cc-906b-793b72c61ba3"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211812Z:274aa0f9-3d6e-4415-b175-37428c5dfdee"
+          "WESTUS2:20171118T022442Z:e18ca4d0-02c8-48cc-906b-793b72c61ba3"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1243,7 +1243,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1255,7 +1255,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:18:42 GMT"
+          "Sat, 18 Nov 2017 02:25:11 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1270,10 +1270,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "f76a2532-6c1f-49ac-b41e-db5c848247ec"
+          "599967b3-e1a0-4aef-b656-05eef26ac43e"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1285,17 +1285,17 @@
           "14978"
         ],
         "x-ms-correlation-request-id": [
-          "ef086503-7bd9-46ce-9f71-04a6b5dbfdac"
+          "fd8a435d-c4a8-4f64-ba1d-7be758f9afbb"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211842Z:ef086503-7bd9-46ce-9f71-04a6b5dbfdac"
+          "WESTUS2:20171118T022512Z:fd8a435d-c4a8-4f64-ba1d-7be758f9afbb"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1304,7 +1304,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1316,7 +1316,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:19:11 GMT"
+          "Sat, 18 Nov 2017 02:25:41 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1331,10 +1331,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "d7670fee-bcc7-417a-876b-337276151d0f"
+          "606c661b-cb98-4284-a0a2-627472622a8e"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1346,17 +1346,17 @@
           "14977"
         ],
         "x-ms-correlation-request-id": [
-          "10ae844f-cf21-41d4-8d59-0ea0e77c18d4"
+          "f28d7df5-98d3-4b7a-9aa4-1318998c42fc"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211912Z:10ae844f-cf21-41d4-8d59-0ea0e77c18d4"
+          "WESTUS2:20171118T022542Z:f28d7df5-98d3-4b7a-9aa4-1318998c42fc"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1365,7 +1365,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1377,7 +1377,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:19:41 GMT"
+          "Sat, 18 Nov 2017 02:26:12 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1392,10 +1392,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "e2fcff6c-5aeb-49c0-8ffd-cbafd52c3c2e"
+          "a49d863c-9504-463e-907e-f2367cd96b53"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1407,17 +1407,17 @@
           "14976"
         ],
         "x-ms-correlation-request-id": [
-          "621a3ab6-de74-42f0-bf1d-09b624ee18d8"
+          "62d26cec-d88b-442c-8d67-75c35c6e3fa5"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T211942Z:621a3ab6-de74-42f0-bf1d-09b624ee18d8"
+          "WESTUS2:20171118T022612Z:62d26cec-d88b-442c-8d67-75c35c6e3fa5"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1426,7 +1426,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1438,7 +1438,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:20:12 GMT"
+          "Sat, 18 Nov 2017 02:26:42 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1453,10 +1453,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "7f5734a8-1d37-402b-b472-edb7beb87758"
+          "8868c0ba-07fe-460d-884d-f3f83d63fa63"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1468,17 +1468,17 @@
           "14975"
         ],
         "x-ms-correlation-request-id": [
-          "af72ddf7-d85a-4f32-8a30-32695f2e1f7a"
+          "d864d847-a276-4bd4-9de6-8779359f24d4"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212013Z:af72ddf7-d85a-4f32-8a30-32695f2e1f7a"
+          "WESTUS2:20171118T022642Z:d864d847-a276-4bd4-9de6-8779359f24d4"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1487,7 +1487,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1499,7 +1499,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:20:43 GMT"
+          "Sat, 18 Nov 2017 02:27:12 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1514,10 +1514,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "27471204-6899-4d1e-945c-0e89a889d7d0"
+          "76ad689f-9aa7-4666-afdb-47f40edc3d09"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1529,17 +1529,17 @@
           "14974"
         ],
         "x-ms-correlation-request-id": [
-          "7ccc0050-bd01-4401-a5f1-af01cde218c3"
+          "3e187c2c-b242-46d2-8c36-9cef7a4f6cae"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212043Z:7ccc0050-bd01-4401-a5f1-af01cde218c3"
+          "WESTUS2:20171118T022712Z:3e187c2c-b242-46d2-8c36-9cef7a4f6cae"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1548,7 +1548,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1560,7 +1560,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:21:13 GMT"
+          "Sat, 18 Nov 2017 02:27:42 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1575,10 +1575,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "e0cd8dac-3631-4497-ac9e-610e11ebc78e"
+          "021c9001-4584-4cc6-a22d-45150c152ce4"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1590,17 +1590,17 @@
           "14973"
         ],
         "x-ms-correlation-request-id": [
-          "b8f88e1d-0623-43ad-b13c-121641cc2ef4"
+          "4a93b752-6439-4d9b-a6d9-de0f62cbadcf"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212113Z:b8f88e1d-0623-43ad-b13c-121641cc2ef4"
+          "WESTUS2:20171118T022743Z:4a93b752-6439-4d9b-a6d9-de0f62cbadcf"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1609,7 +1609,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1621,7 +1621,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:21:43 GMT"
+          "Sat, 18 Nov 2017 02:28:12 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1636,10 +1636,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "8bc814ba-7f41-42b6-baf6-1047b8a2758e"
+          "e6a950df-4f56-4ec1-8477-ead99f938196"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1651,17 +1651,17 @@
           "14972"
         ],
         "x-ms-correlation-request-id": [
-          "347a3e0e-20dd-4081-8c66-b988ae01846a"
+          "bbe7d9ad-98e9-4677-869a-e3f1c564262d"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212143Z:347a3e0e-20dd-4081-8c66-b988ae01846a"
+          "WESTUS2:20171118T022813Z:bbe7d9ad-98e9-4677-869a-e3f1c564262d"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1670,7 +1670,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1682,7 +1682,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:22:13 GMT"
+          "Sat, 18 Nov 2017 02:28:43 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1697,10 +1697,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "4a55c8c3-01fa-45f6-ab11-5cc31dc3e96c"
+          "440e6cbd-8cf9-477a-9bc6-859d8ebf379f"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1712,17 +1712,17 @@
           "14971"
         ],
         "x-ms-correlation-request-id": [
-          "dca3e45f-ac6e-43bd-ae13-a820ccfa37a6"
+          "c2dc0ac4-19e6-4eb9-b3d0-1816c3343196"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212213Z:dca3e45f-ac6e-43bd-ae13-a820ccfa37a6"
+          "WESTUS2:20171118T022843Z:c2dc0ac4-19e6-4eb9-b3d0-1816c3343196"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1731,7 +1731,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1743,7 +1743,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:22:43 GMT"
+          "Sat, 18 Nov 2017 02:29:12 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1758,10 +1758,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "61d7f730-8168-4223-850b-30c06c14d245"
+          "2b4473e6-0907-4832-bd01-86d23db36311"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1773,17 +1773,17 @@
           "14970"
         ],
         "x-ms-correlation-request-id": [
-          "5220472b-c0a7-41f4-9c18-b85c5d0ed767"
+          "1b5f5be0-fd65-4e04-b5a6-8432dda3826c"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212244Z:5220472b-c0a7-41f4-9c18-b85c5d0ed767"
+          "WESTUS2:20171118T022913Z:1b5f5be0-fd65-4e04-b5a6-8432dda3826c"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1792,7 +1792,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1804,7 +1804,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:23:13 GMT"
+          "Sat, 18 Nov 2017 02:29:43 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1819,10 +1819,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "d4d72f96-c92f-4771-b9ac-d217a75ccba7"
+          "bad26f4f-a50a-4c20-96eb-037d678ce3fd"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1834,17 +1834,17 @@
           "14969"
         ],
         "x-ms-correlation-request-id": [
-          "2cab8218-38ab-4796-9d47-539a239afe26"
+          "81627c4f-21bd-4c51-a3ae-6fb6a9992237"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212314Z:2cab8218-38ab-4796-9d47-539a239afe26"
+          "WESTUS2:20171118T022943Z:81627c4f-21bd-4c51-a3ae-6fb6a9992237"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1853,7 +1853,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1865,7 +1865,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:23:44 GMT"
+          "Sat, 18 Nov 2017 02:30:13 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1880,10 +1880,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "f4a54dd5-1de2-4c3b-8261-8cc7fd9ac46f"
+          "690d17e9-b1cb-4d28-b4ee-61dc40619817"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1895,17 +1895,17 @@
           "14968"
         ],
         "x-ms-correlation-request-id": [
-          "ad346420-578f-442d-99f9-bbd27ef1a26e"
+          "6d768989-a91c-49fc-b081-db79bf7f31e4"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212344Z:ad346420-578f-442d-99f9-bbd27ef1a26e"
+          "WESTUS2:20171118T023014Z:6d768989-a91c-49fc-b081-db79bf7f31e4"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1914,7 +1914,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1926,7 +1926,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:24:13 GMT"
+          "Sat, 18 Nov 2017 02:30:44 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -1941,10 +1941,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "5041bf9a-c56f-466b-a750-f85cb19fc90c"
+          "ab60a047-41f3-49ea-a7f2-aaa6284bad2a"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -1956,17 +1956,17 @@
           "14967"
         ],
         "x-ms-correlation-request-id": [
-          "849a8849-a5cd-4801-87c4-8774ee4a0534"
+          "b279e157-a9ca-42f4-a9c1-d58c8d53bbbf"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212414Z:849a8849-a5cd-4801-87c4-8774ee4a0534"
+          "WESTUS2:20171118T023044Z:b279e157-a9ca-42f4-a9c1-d58c8d53bbbf"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -1975,7 +1975,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -1987,7 +1987,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:24:43 GMT"
+          "Sat, 18 Nov 2017 02:31:13 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -2002,10 +2002,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "ce45521a-3b42-44ed-9aae-5bd325c131f8"
+          "43b54dfb-f156-4161-a80e-92b09f2ae27f"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -2017,17 +2017,17 @@
           "14966"
         ],
         "x-ms-correlation-request-id": [
-          "b0383341-8367-477e-8c78-3514863ed938"
+          "78116b40-456f-4cf7-90fa-f4f71afb346d"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212444Z:b0383341-8367-477e-8c78-3514863ed938"
+          "WESTUS2:20171118T023114Z:78116b40-456f-4cf7-90fa-f4f71afb346d"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -2036,7 +2036,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -2048,7 +2048,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:25:13 GMT"
+          "Sat, 18 Nov 2017 02:31:43 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -2063,10 +2063,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "f3f566e2-8de1-41c8-921e-898fa95288cf"
+          "82ab0127-02ad-4a8a-8145-4ee42ed91678"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -2078,17 +2078,17 @@
           "14965"
         ],
         "x-ms-correlation-request-id": [
-          "4f675784-420d-4d48-b3f6-04fc01caa0bc"
+          "8608249e-1d4a-4732-9e0e-a249f7bb4a97"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212514Z:4f675784-420d-4d48-b3f6-04fc01caa0bc"
+          "WESTUS2:20171118T023144Z:8608249e-1d4a-4732-9e0e-a249f7bb4a97"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL3JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
@@ -2097,7 +2097,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"tenantSettings\": {\r\n      \"InternalDependencyList\": \"[\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eus3309574733.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://eus3309574733.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusscaleunit9749652111.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://eusscaleunit9749652111.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa7784673109241.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb7782760268553.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa7915109687172.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb7911609025904.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa4449028249225.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb4448561674123.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa5466196686154.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb5466654785246.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa8362296346042.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb8360532376829.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://prod.warmpath.msftcloudes.com\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdCUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWEURc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEASc1.cloudapp.net\\\"\\r\\n  }\\r\\n]\"\r\n    },\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -2109,7 +2109,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:25:44 GMT"
+          "Sat, 18 Nov 2017 02:32:15 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -2124,10 +2124,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "38c6e25e-a774-40d4-9605-39c0f0af4144"
+          "8508f697-3b6f-4e06-a59e-88a2e0ef9ea4"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -2139,200 +2139,17 @@
           "14964"
         ],
         "x-ms-correlation-request-id": [
-          "6bc57daa-1a85-4775-8a82-360a2f1e3d08"
+          "3daaa2a6-ea84-4ca9-90a9-a6acaa0c14f9"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212544Z:6bc57daa-1a85-4775-8a82-360a2f1e3d08"
+          "WESTUS2:20171118T023216Z:3daaa2a6-ea84-4ca9-90a9-a6acaa0c14f9"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
-      "RequestMethod": "GET",
-      "RequestBody": "",
-      "RequestHeaders": {
-        "User-Agent": [
-          "FxVersion/4.6.25211.01",
-          "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
-        ]
-      },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
-      "ResponseHeaders": {
-        "Content-Type": [
-          "application/json; charset=utf-8"
-        ],
-        "Expires": [
-          "-1"
-        ],
-        "Cache-Control": [
-          "no-cache"
-        ],
-        "Date": [
-          "Mon, 13 Nov 2017 21:26:14 GMT"
-        ],
-        "Pragma": [
-          "no-cache"
-        ],
-        "Transfer-Encoding": [
-          "chunked"
-        ],
-        "Server": [
-          "Microsoft-HTTPAPI/2.0"
-        ],
-        "Vary": [
-          "Accept-Encoding"
-        ],
-        "x-ms-request-id": [
-          "3ed7a0d6-f4f1-4def-a816-1fc14340b07b"
-        ],
-        "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
-        ],
-        "Strict-Transport-Security": [
-          "max-age=31536000; includeSubDomains"
-        ],
-        "x-content-type-options": [
-          "nosniff"
-        ],
-        "x-ms-ratelimit-remaining-subscription-reads": [
-          "14963"
-        ],
-        "x-ms-correlation-request-id": [
-          "e6725767-33e6-43c9-bb79-7bb2a71a1e92"
-        ],
-        "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212615Z:e6725767-33e6-43c9-bb79-7bb2a71a1e92"
-        ]
-      },
-      "StatusCode": 200
-    },
-    {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
-      "RequestMethod": "GET",
-      "RequestBody": "",
-      "RequestHeaders": {
-        "User-Agent": [
-          "FxVersion/4.6.25211.01",
-          "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
-        ]
-      },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
-      "ResponseHeaders": {
-        "Content-Type": [
-          "application/json; charset=utf-8"
-        ],
-        "Expires": [
-          "-1"
-        ],
-        "Cache-Control": [
-          "no-cache"
-        ],
-        "Date": [
-          "Mon, 13 Nov 2017 21:26:44 GMT"
-        ],
-        "Pragma": [
-          "no-cache"
-        ],
-        "Transfer-Encoding": [
-          "chunked"
-        ],
-        "Server": [
-          "Microsoft-HTTPAPI/2.0"
-        ],
-        "Vary": [
-          "Accept-Encoding"
-        ],
-        "x-ms-request-id": [
-          "45769daa-5ffe-4bfb-9085-8abb64d9d3f7"
-        ],
-        "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
-        ],
-        "Strict-Transport-Security": [
-          "max-age=31536000; includeSubDomains"
-        ],
-        "x-content-type-options": [
-          "nosniff"
-        ],
-        "x-ms-ratelimit-remaining-subscription-reads": [
-          "14962"
-        ],
-        "x-ms-correlation-request-id": [
-          "28087320-6ada-4660-84db-1064c494eedf"
-        ],
-        "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212645Z:28087320-6ada-4660-84db-1064c494eedf"
-        ]
-      },
-      "StatusCode": 200
-    },
-    {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9yZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
-      "RequestMethod": "GET",
-      "RequestBody": "",
-      "RequestHeaders": {
-        "User-Agent": [
-          "FxVersion/4.6.25211.01",
-          "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
-        ]
-      },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": false,\r\n    \"tenantSettings\": {\r\n      \"InternalDependencyList\": \"[\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncus4415489477.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://ncus4415489477.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusscaleunit2893879546.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusscaleunit2893879546.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa290631340206.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb298265705405.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa227298020715.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb221843638082.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa109418459092.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb103173876702.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa658470261098.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb651744697752.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa277226832838.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb277057314660.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://prod.warmpath.msftcloudes.com\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdCUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWEURc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEASc1.cloudapp.net\\\"\\r\\n  }\\r\\n]\"\r\n    },\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
-      "ResponseHeaders": {
-        "Content-Type": [
-          "application/json; charset=utf-8"
-        ],
-        "Expires": [
-          "-1"
-        ],
-        "Cache-Control": [
-          "no-cache"
-        ],
-        "Date": [
-          "Mon, 13 Nov 2017 21:27:15 GMT"
-        ],
-        "Pragma": [
-          "no-cache"
-        ],
-        "Transfer-Encoding": [
-          "chunked"
-        ],
-        "Server": [
-          "Microsoft-HTTPAPI/2.0"
-        ],
-        "Vary": [
-          "Accept-Encoding"
-        ],
-        "x-ms-request-id": [
-          "5fff6b88-7677-4cca-aa5a-81a0ed0fc7f7"
-        ],
-        "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
-        ],
-        "Strict-Transport-Security": [
-          "max-age=31536000; includeSubDomains"
-        ],
-        "x-content-type-options": [
-          "nosniff"
-        ],
-        "x-ms-ratelimit-remaining-subscription-reads": [
-          "14961"
-        ],
-        "x-ms-correlation-request-id": [
-          "71ed410e-30e9-4ebf-8a50-13c34a867aa8"
-        ],
-        "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212715Z:71ed410e-30e9-4ebf-8a50-13c34a867aa8"
-        ]
-      },
-      "StatusCode": 200
-    },
-    {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9SZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL1JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "PATCH",
       "RequestBody": "{\r\n  \"properties\": {\r\n    \"redisConfiguration\": {\r\n      \"maxmemory-policy\": \"allkeys-lru\"\r\n    },\r\n    \"enableNonSslPort\": true,\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    }\r\n  }\r\n}",
       "RequestHeaders": {
@@ -2343,7 +2160,7 @@
           "225"
         ],
         "x-ms-client-request-id": [
-          "32725566-a259-4e21-a9c0-6cafd48cf053"
+          "2d23f349-e7c5-437b-805c-443c1c6a52cc"
         ],
         "accept-language": [
           "en-US"
@@ -2353,7 +2170,7 @@
           "Microsoft.Azure.Management.Redis.RedisManagementClient/4.3.0.0"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607\",\r\n  \"location\": \"North Central US\",\r\n  \"name\": \"RCName8607\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": true,\r\n    \"tenantSettings\": {\r\n      \"InternalDependencyList\": \"[\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncus4415489477.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://ncus4415489477.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusscaleunit2893879546.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusscaleunit2893879546.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa290631340206.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb298265705405.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa227298020715.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb221843638082.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa109418459092.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb103173876702.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa658470261098.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb651744697752.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://ncusgenevasa277226832838.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"ncusgenevasb277057314660.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://prod.warmpath.msftcloudes.com\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdCUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWEURc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEASc1.cloudapp.net\\\"\\r\\n  }\\r\\n]\"\r\n    },\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-policy\": \"allkeys-lru\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RCName8607.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051\",\r\n  \"location\": \"East US\",\r\n  \"name\": \"RedisCreateUpdate7051\",\r\n  \"type\": \"Microsoft.Cache/Redis\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"redisVersion\": \"3.2.7\",\r\n    \"sku\": {\r\n      \"name\": \"Basic\",\r\n      \"family\": \"C\",\r\n      \"capacity\": 0\r\n    },\r\n    \"enableNonSslPort\": true,\r\n    \"tenantSettings\": {\r\n      \"InternalDependencyList\": \"[\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eus3309574733.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://eus3309574733.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusscaleunit9749652111.blob.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageQueue\\\",\\r\\n    \\\"Value\\\": \\\"https://eusscaleunit9749652111.queue.core.windows.net/\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa7784673109241.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb7782760268553.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa7915109687172.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb7911609025904.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa4449028249225.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb4448561674123.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa5466196686154.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb5466654785246.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"StorageBlob\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasa8362296346042.blob.core.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"ServiceBus\\\",\\r\\n    \\\"Value\\\": \\\"https://eusgenevasb8360532376829.servicebus.windows.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://prod.warmpath.msftcloudes.com\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdCUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEUSc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdWEURc1.cloudapp.net\\\"\\r\\n  },\\r\\n  {\\r\\n    \\\"Type\\\": \\\"MetricsConfigurationService\\\",\\r\\n    \\\"Value\\\": \\\"https://WarmPathFEProdEASc1.cloudapp.net\\\"\\r\\n  }\\r\\n]\"\r\n    },\r\n    \"redisConfiguration\": {\r\n      \"maxclients\": \"256\",\r\n      \"maxmemory-reserved\": \"2\",\r\n      \"maxfragmentationmemory-reserved\": \"12\",\r\n      \"maxmemory-policy\": \"allkeys-lru\",\r\n      \"maxmemory-delta\": \"2\"\r\n    },\r\n    \"accessKeys\": null,\r\n    \"hostName\": \"RedisCreateUpdate7051.redis.cache.windows.net\",\r\n    \"port\": 6379,\r\n    \"sslPort\": 6380,\r\n    \"linkedServers\": []\r\n  },\r\n  \"zones\": null\r\n}",
       "ResponseHeaders": {
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -2365,7 +2182,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:27:16 GMT"
+          "Sat, 18 Nov 2017 02:32:17 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -2380,10 +2197,10 @@
           "Accept-Encoding"
         ],
         "x-ms-request-id": [
-          "7e1fb84e-633c-497e-b768-fdf28e8dacf1"
+          "40e64eae-bca2-411a-b36a-3a0f12489be2"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -2395,22 +2212,22 @@
           "1198"
         ],
         "x-ms-correlation-request-id": [
-          "965b152b-e519-4548-abb8-6046b410f2f2"
+          "da013ece-cbf6-4d13-b1dd-e19cbf55d69f"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212717Z:965b152b-e519-4548-abb8-6046b410f2f2"
+          "WESTUS2:20171118T023217Z:da013ece-cbf6-4d13-b1dd-e19cbf55d69f"
         ]
       },
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/redisCacheRG7489/providers/Microsoft.Cache/Redis/RCName8607?api-version=2017-02-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL3JlZGlzQ2FjaGVSRzc0ODkvcHJvdmlkZXJzL01pY3Jvc29mdC5DYWNoZS9SZWRpcy9SQ05hbWU4NjA3P2FwaS12ZXJzaW9uPTIwMTctMDItMDE=",
+      "RequestUri": "/subscriptions/592cc9de-a3cd-4d70-9bc1-c1a28a3625b5/resourceGroups/RedisCreateUpdate3932/providers/Microsoft.Cache/Redis/RedisCreateUpdate7051?api-version=2017-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvNTkyY2M5ZGUtYTNjZC00ZDcwLTliYzEtYzFhMjhhMzYyNWI1L3Jlc291cmNlR3JvdXBzL1JlZGlzQ3JlYXRlVXBkYXRlMzkzMi9wcm92aWRlcnMvTWljcm9zb2Z0LkNhY2hlL1JlZGlzL1JlZGlzQ3JlYXRlVXBkYXRlNzA1MT9hcGktdmVyc2lvbj0yMDE3LTEwLTAx",
       "RequestMethod": "DELETE",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "533d0276-2af4-41f6-9034-2d256d845f91"
+          "97b02234-fd99-4d93-9e2a-b81b8e638ad0"
         ],
         "accept-language": [
           "en-US"
@@ -2432,7 +2249,7 @@
           "no-cache"
         ],
         "Date": [
-          "Mon, 13 Nov 2017 21:27:18 GMT"
+          "Sat, 18 Nov 2017 02:32:19 GMT"
         ],
         "Pragma": [
           "no-cache"
@@ -2441,10 +2258,10 @@
           "Microsoft-HTTPAPI/2.0"
         ],
         "x-ms-request-id": [
-          "81500143-139e-41bb-866f-34a96deddf84"
+          "11f6b585-ee2b-410e-b425-1e388efdc9a1"
         ],
         "x-rp-server-mvid": [
-          "16ff3699-4c27-4ba1-b00f-4cdc571911f4"
+          "55e3e384-e711-4831-b869-79bc47f84051"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -2456,10 +2273,10 @@
           "1197"
         ],
         "x-ms-correlation-request-id": [
-          "7492ced0-d300-4570-bd7b-2ebb1bf6c875"
+          "a74b18a8-9eb8-444f-9aa9-cfb7bd9c3f9a"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20171113T212719Z:7492ced0-d300-4570-bd7b-2ebb1bf6c875"
+          "WESTUS2:20171118T023219Z:a74b18a8-9eb8-444f-9aa9-cfb7bd9c3f9a"
         ]
       },
       "StatusCode": 200
