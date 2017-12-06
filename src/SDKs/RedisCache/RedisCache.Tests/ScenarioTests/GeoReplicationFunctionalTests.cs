@@ -84,7 +84,7 @@ namespace AzureRedisCache.Tests
                 Assert.Equal("succeeded", scResponse.ProvisioningState, ignoreCase: true);
                 
                 // Set up replication link
-                RedisLinkedServerWithProperties linkServerWithProperties = _client.RedisLinkedServer.Create(resourceGroupName, redisCacheName1, redisCacheName2, new RedisLinkedServerCreateParameters
+                RedisLinkedServerWithProperties linkServerWithProperties = _client.LinkedServer.Create(resourceGroupName, redisCacheName1, redisCacheName2, new RedisLinkedServerCreateParameters
                                                     {
                                                         LinkedRedisCacheId = scResponse.Id,
                                                         LinkedRedisCacheLocation = RedisCacheManagementHelper.SecondaryLocation,
@@ -98,27 +98,27 @@ namespace AzureRedisCache.Tests
                 Assert.Equal("succeeded", linkServerWithProperties.ProvisioningState, ignoreCase: true);
 
                 // test get response from primary
-                RedisLinkedServerWithProperties primaryLinkProperties = _client.RedisLinkedServer.Get(resourceGroupName, redisCacheName1, redisCacheName2);
+                RedisLinkedServerWithProperties primaryLinkProperties = _client.LinkedServer.Get(resourceGroupName, redisCacheName1, redisCacheName2);
                 Assert.Equal(scResponse.Id, primaryLinkProperties.LinkedRedisCacheId);
                 Assert.Equal(RedisCacheManagementHelper.SecondaryLocation, primaryLinkProperties.LinkedRedisCacheLocation);
                 Assert.Equal(ReplicationRole.Secondary, primaryLinkProperties.ServerRole);
 
                 // test list response from primary
-                IPage<RedisLinkedServerWithProperties> allPrimaryLinkProperties = _client.RedisLinkedServer.List(resourceGroupName, redisCacheName1);
+                IPage<RedisLinkedServerWithProperties> allPrimaryLinkProperties = _client.LinkedServer.List(resourceGroupName, redisCacheName1);
                 Assert.Single(allPrimaryLinkProperties);
                 
                 // test get response from secondary
-                RedisLinkedServerWithProperties secondaryLinkProperties = _client.RedisLinkedServer.Get(resourceGroupName, redisCacheName2, redisCacheName1);
+                RedisLinkedServerWithProperties secondaryLinkProperties = _client.LinkedServer.Get(resourceGroupName, redisCacheName2, redisCacheName1);
                 Assert.Equal(ncResponse.Id, secondaryLinkProperties.LinkedRedisCacheId);
                 Assert.Equal(RedisCacheManagementHelper.Location, secondaryLinkProperties.LinkedRedisCacheLocation);
                 Assert.Equal(ReplicationRole.Primary, secondaryLinkProperties.ServerRole);
 
                 // test list response from secondary
-                IPage<RedisLinkedServerWithProperties> allSecondaryLinkProperties = _client.RedisLinkedServer.List(resourceGroupName, redisCacheName2);
+                IPage<RedisLinkedServerWithProperties> allSecondaryLinkProperties = _client.LinkedServer.List(resourceGroupName, redisCacheName2);
                 Assert.Single(allSecondaryLinkProperties);
 
                 // Delete link on primary
-                _client.RedisLinkedServer.Delete(resourceGroupName, redisCacheName1, redisCacheName2);
+                _client.LinkedServer.Delete(resourceGroupName, redisCacheName1, redisCacheName2);
 
                 // links should disappear in 5 min
                 IPage<RedisLinkedServerWithProperties> afterDeletePrimaryLinkProperties = null;
@@ -126,8 +126,8 @@ namespace AzureRedisCache.Tests
                 for (int i = 0; i < 10; i++)
                 {
                     TestUtilities.Wait(new TimeSpan(0, 0, 30));
-                    afterDeletePrimaryLinkProperties = _client.RedisLinkedServer.List(resourceGroupName, redisCacheName1);
-                    afterDeleteSecondaryLinkProperties = _client.RedisLinkedServer.List(resourceGroupName, redisCacheName2);
+                    afterDeletePrimaryLinkProperties = _client.LinkedServer.List(resourceGroupName, redisCacheName1);
+                    afterDeleteSecondaryLinkProperties = _client.LinkedServer.List(resourceGroupName, redisCacheName2);
                     if (afterDeletePrimaryLinkProperties.Count() == 0 && afterDeleteSecondaryLinkProperties.Count() == 0) break;
                 }
                 Assert.NotNull(afterDeletePrimaryLinkProperties);

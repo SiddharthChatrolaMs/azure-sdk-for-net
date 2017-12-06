@@ -23,12 +23,12 @@ namespace Microsoft.Azure.Management.Redis
     using System.Threading.Tasks;
 
     /// <summary>
-    /// RedisLinkedServerOperations operations.
+    /// LinkedServerOperations operations.
     /// </summary>
-    internal partial class RedisLinkedServerOperations : IServiceOperations<RedisManagementClient>, IRedisLinkedServerOperations
+    internal partial class LinkedServerOperations : IServiceOperations<RedisManagementClient>, ILinkedServerOperations
     {
         /// <summary>
-        /// Initializes a new instance of the RedisLinkedServerOperations class.
+        /// Initializes a new instance of the LinkedServerOperations class.
         /// </summary>
         /// <param name='client'>
         /// Reference to the service client.
@@ -36,7 +36,7 @@ namespace Microsoft.Azure.Management.Redis
         /// <exception cref="System.ArgumentNullException">
         /// Thrown when a required parameter is null
         /// </exception>
-        internal RedisLinkedServerOperations(RedisManagementClient client)
+        internal LinkedServerOperations(RedisManagementClient client)
         {
             if (client == null)
             {

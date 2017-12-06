@@ -91,9 +91,9 @@ namespace Microsoft.Azure.Management.Redis
         IPatchSchedulesOperations PatchSchedules { get; }
 
         /// <summary>
-        /// Gets the IRedisLinkedServerOperations.
+        /// Gets the ILinkedServerOperations.
         /// </summary>
-        IRedisLinkedServerOperations RedisLinkedServer { get; }
+        ILinkedServerOperations LinkedServer { get; }
 
     }
 }

@@ -19,9 +19,9 @@ namespace Microsoft.Azure.Management.Redis
     using System.Threading.Tasks;
 
     /// <summary>
-    /// RedisLinkedServerOperations operations.
+    /// LinkedServerOperations operations.
     /// </summary>
-    public partial interface IRedisLinkedServerOperations
+    public partial interface ILinkedServerOperations
     {
         /// <summary>
         /// Adds a linked server to the Redis cache (requires Premium SKU).

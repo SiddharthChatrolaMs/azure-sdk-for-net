@@ -96,9 +96,9 @@ namespace Microsoft.Azure.Management.Redis
         public virtual IPatchSchedulesOperations PatchSchedules { get; private set; }
 
         /// <summary>
-        /// Gets the IRedisLinkedServerOperations.
+        /// Gets the ILinkedServerOperations.
         /// </summary>
-        public virtual IRedisLinkedServerOperations RedisLinkedServer { get; private set; }
+        public virtual ILinkedServerOperations LinkedServer { get; private set; }
 
         /// <summary>
         /// Initializes a new instance of the RedisManagementClient class.
@@ -305,7 +305,7 @@ namespace Microsoft.Azure.Management.Redis
             Redis = new RedisOperations(this);
             FirewallRules = new FirewallRulesOperations(this);
             PatchSchedules = new PatchSchedulesOperations(this);
-            RedisLinkedServer = new RedisLinkedServerOperations(this);
+            LinkedServer = new LinkedServerOperations(this);
             BaseUri = new System.Uri("https://management.azure.com");
             ApiVersion = "2017-10-01";
             AcceptLanguage = "en-US";
