@@ -54,7 +54,8 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// Redis cache inside an existing Azure Virtual Network.</param>
         /// <param name="zones">A list of availability zones denoting where the
         /// resource needs to come from.</param>
-        public RedisCreateParameters(Sku sku, string location, IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), string subnetId = default(string), string staticIP = default(string), IList<string> zones = default(IList<string>))
+        /// <param name="tags">Resource tags.</param>
+        public RedisCreateParameters(Sku sku, string location, IDictionary<string, string> redisConfiguration = default(IDictionary<string, string>), bool? enableNonSslPort = default(bool?), IDictionary<string, string> tenantSettings = default(IDictionary<string, string>), int? shardCount = default(int?), string subnetId = default(string), string staticIP = default(string), IList<string> zones = default(IList<string>), IDictionary<string, string> tags = default(IDictionary<string, string>))
         {
             RedisConfiguration = redisConfiguration;
             EnableNonSslPort = enableNonSslPort;
@@ -65,6 +66,7 @@ namespace Microsoft.Azure.Management.Redis.Models
             StaticIP = staticIP;
             Zones = zones;
             Location = location;
+            Tags = tags;
             CustomInit();
         }
 
@@ -134,6 +136,12 @@ namespace Microsoft.Azure.Management.Redis.Models
         /// </summary>
         [JsonProperty(PropertyName = "location")]
         public string Location { get; set; }
+
+        /// <summary>
+        /// Gets or sets resource tags.
+        /// </summary>
+        [JsonProperty(PropertyName = "tags")]
+        public IDictionary<string, string> Tags { get; set; }
 
         /// <summary>
         /// Validate the object.
